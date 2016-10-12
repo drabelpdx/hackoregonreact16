@@ -1,6 +1,6 @@
 
 //Reduce
-var myArray = [1,2,3];
+//var myArray = [1,2,3];
 
 function addUpArray(array) {
   var sum = 0;
@@ -10,12 +10,12 @@ function addUpArray(array) {
   return sum;
 };
 
-addUpArray(myArray);
+//addUpArray(myArray);
 
 
 //Concat
-var arr1 = [1,2,3];
-var arr2 = [4,5,6];
+//var arr1 = [1,2,3];
+//var arr2 = [4,5,6];
 
 function concatMyArray(arr1, arr2) {
   arr2.forEach(function(num) {
@@ -24,12 +24,12 @@ function concatMyArray(arr1, arr2) {
   return arr1;
 }
 
-concatMyArray(arr1, arr2);
-
-var arrThing = [2,3,4,5];
+//concatMyArray(arr1, arr2);
 
 
 //Find
+//var arrThing = [2,3,4,5];
+
 function findMyItem(arr, item) {
   var arr2 = [];
   arr.forEach(function(thing) {
@@ -40,16 +40,26 @@ function findMyItem(arr, item) {
   return arr2
 }
 
-findMyItem(arrThing, 3);
+//findMyItem(arrThing, 3);
 
 
 //Replace
+//var myWords = ["cat", "dog", "ice"];
+
 function upperCaseMe(arr){
   var newArr = [];
-  var vowels = [a,e,i,o,u];
-  var newWord = "";
+  var vowels = ["a","e","i","o","u"];
+  var isVowel = "";
   arr.forEach(function(word) {
-    newWord = word.split;
-
+    isVowel = word[0];
+    console.log(isVowel);
+    console.log(vowels.indexOf(isVowel));
+    if(vowels.indexOf(isVowel) >= 0 ) {
+      word = word.toUpperCase();
+    }
+    newArr.push(word);
   });
+  return newArr;
 }
+
+//upperCaseMe(myWords);
