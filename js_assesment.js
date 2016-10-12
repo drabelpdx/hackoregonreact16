@@ -52,8 +52,6 @@ function upperCaseMe(arr){
   var isVowel = "";
   arr.forEach(function(word) {
     isVowel = word[0];
-    console.log(isVowel);
-    console.log(vowels.indexOf(isVowel));
     if(vowels.indexOf(isVowel) >= 0 ) {
       word = word.toUpperCase();
     }
