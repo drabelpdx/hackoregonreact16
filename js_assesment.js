@@ -12,6 +12,18 @@ function addUpArray(array) {
 
 //addUpArray(myArray);
 
+//ES6
+//const numbers = [10, 20, 30];
+
+function addItUp(numbers) {
+	return numbers.reduce(function(sum, number) {
+    console.log(sum, number);
+		return sum + number;
+	}, 0);
+};
+
+//addItUp(numbers);
+
 
 //Concat
 //var arr1 = [1,2,3];
@@ -25,6 +37,12 @@ function concatMyArray(arr1, arr2) {
 }
 
 //concatMyArray(arr1, arr2);
+
+//ES6
+function concatMyArrays(...arr) {
+  const newArr = [];
+  return newArr.concat( ...arr);
+}
 
 
 //Find
@@ -41,6 +59,20 @@ function findMyItem(arr, item) {
 }
 
 //findMyItem(arrThing, 3);
+
+//ES6
+
+function removeMyItem(arr, item) {
+  return arr.filter(function(thing) {
+  	 if(thing !== item){
+			return thing
+     }
+  });
+}
+
+//removeMyItem(arrThing, 3);
+
+
 
 
 //Replace
