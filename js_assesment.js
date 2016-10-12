@@ -16,10 +16,9 @@ function addUpArray(array) {
 //const numbers = [10, 20, 30];
 
 function addItUp(numbers) {
-	return numbers.reduce(function(sum, number) {
-    console.log(sum, number);
-		return sum + number;
-	}, 0);
+  return numbers.reduce(function(sum, number) {
+    return sum + number;
+  }, 0);
 };
 
 //addItUp(numbers);
@@ -64,15 +63,13 @@ function findMyItem(arr, item) {
 
 function removeMyItem(arr, item) {
   return arr.filter(function(thing) {
-  	 if(thing !== item){
-			return thing
-     }
+    if(thing !== item){
+      return thing
+    }
   });
 }
 
 //removeMyItem(arrThing, 3);
-
-
 
 
 //Replace
